@@ -16,12 +16,19 @@ The SQL scripts are written in T-SQL and it's meant to use MS SQL Server.
 The key files in this repository are:
 
 DATA/dataset.csv           : Input source file (Raw production events).
+
 dwh_config.py              : Configuration settings for DB credentials and analysis parameters.
+
 dwh_documentation.md       : Technical documentation on the DWH schema and ETL logic.
+
 dwh_requirements.txt       : Python dependency list (pandas, SQLAlchemy, pyodbc).
+
 dwh_main_runner.py         : The main script that runs the entire pipeline (setup, ETL, reporting).
+
 dwh_sql_analytics-views.sql: SQL script defining the analytical views (business logic).
+
 dwh_sql_schema-tables.sql  : SQL script defining the table DDL.
+
 test_queries.sql           : SQL script where the user can interact with the created Witside_Production_Floor_DWH for any testing
 
 2. Quick-Start Execution (Local Setup)
@@ -52,10 +59,10 @@ Create and activate a virtual environment (Highly Recommended):
 
 python -m venv venv
 
-# On Windows:
+On Windows:
 .\venv\Scripts\activate
 
-# On Linux/macOS:
+On Linux/macOS:
 source venv/bin/activate
 
 
@@ -87,15 +94,18 @@ Default paths are set.
 If you want to change them or use a different OS and the paths must be re-written,
 do so in these flags:
 
-#path for input data file
+path for input data file:
+
 INPUT_DATAFILE_PATH = BASE_DIR / 'DATA' / 'dataset.csv' 
 
-#path for .sql file location (default is base dir, together with .py)
+path for .sql file location (default is base dir, together with .py):
+
 SQL_DIR = BASE_DIR # Assuming SQL files are in the root or 'sql' subfolder
 
-#path for output files (report and quarantined events)
+path for output files (report and quarantined events):
 
 OUTPUT_REPORT_FILE = BASE_DIR / 'analytics_report.txt'
+
 QUARANTINE_FILE = BASE_DIR / 'quarantined_events.csv'
 
 Step 5: Configure Global pipeline settings (dwh_config.py)
