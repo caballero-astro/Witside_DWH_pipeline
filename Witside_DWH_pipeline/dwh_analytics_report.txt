@@ -1,0 +1,27 @@
+=====================================================
+=== Production Floor DWH Pipeline Execution Log ===
+=== Execution Date: 2025-11-30 19:39:37 ===
+=====================================================
+
+ETL Status: SUCCESS
+
+=====================================================
+=== ANALYTICS REPORTING ===
+=====================================================
+--- Q1: Process Cycles for Line 'gr-np-47' ---
+| start_timestamp | stop_timestamp | duration   |
+|:---------------|:--------------|:----------|
+| 2020-10-07 01:33:20 | 2020-10-07 02:03:20 | 30.0 minutes |
+| 2020-10-07 02:15:02 | 2020-10-07 04:15:02 | 120.0 minutes |
+| 2020-10-07 05:00:00 | 2020-10-07 05:55:17 | 55.28 minutes |
+
+--- Q2: Total Floor Uptime and Downtime ---
+| Total Up/Down-time | Total      | In Full Cycles |
+|:------------------|:----------|:--------------|
+| Total Uptime       | 960.283 minutes | 205.283 minutes |
+| Total Downtime     | 56.667 minutes | 56.667 minutes |
+
+--- Q3: Production Line with Most Downtime ---
+| production_line_id | downtime   |
+|:------------------|:----------|
+| gr-np-47           | 56.6667 minutes |
