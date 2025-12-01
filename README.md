@@ -1,11 +1,11 @@
-Witside Production Floor DWH Pipeline
+Witside Production Floor DWH Pipeline  
 #####################################
 
 ## Information and Instructions ##
 
 This repository contains an Extract, Transform, Load (ETL) and Data Warehouse (DWH) pipeline.
 
-The pipeline ingests production event data from a CSV flat file, applies sequential logic validation, 
+The pipeline ingests production event data from a CSV flat file, applies sequential logic validation,  
 loads the data into a Star Schema (specifically targeting SQL Server), and performs key floor-level operational analytics.
 
 The solution is written in Python (using Pandas, SQLAlchemy) and SQL, orchestrated by the single entry point: main_runner.py.
@@ -38,8 +38,8 @@ This pipeline requires a running SQL Server instance and the Microsoft ODBC driv
 Step 1: Install External Dependency (The ODBC Driver)
 
 The Python library pyodbc requires the official Microsoft driver to connect to SQL Server. 
-We recommend using the latest version, ODBC Driver 18 for SQL Server. 
-**ODBC Driver 17 for SQL Server also works - but you have manually change the setting in DB_CONFIG dictionary in dwh_config.py
+We recommend using the latest version, ODBC Driver 18 for SQL Server.  
+Note: ODBC Driver 17 for SQL Server also works - but you have manually change the setting in DB_CONFIG dictionary in dwh_config.py
 
 Windows: Download and install the appropriate 64-bit version of the Microsoft ODBC Driver 18 for SQL Server.
 
