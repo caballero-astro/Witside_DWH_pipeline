@@ -8,7 +8,7 @@ Context: We are in a production floor composed with multiple production lines. W
 	STOP : the production line stopped the operation. This is generated with production line termination.
 3) timestamp : the exact timestamp of the production line's status update.
 
-Business Questions
+* Business Questions
 1) For production line "gr-np-47", give me table with columns:
 	a) start_timestamp: the timestamp with the initiation of the production process. 
 	b) stop_timestamp: the timestamp with the termination of the production process after the last initiation.
@@ -22,5 +22,6 @@ Business Questions
 * Exercise:
 
 1) Provide a python package with the functions that can answer "Business Questions", with a how-to-use guide.
+
 
 2) Provide the .sql files with the code that creates the tables/views needed to answer the "Business Questions", with a guide to implement it into our DWH.
